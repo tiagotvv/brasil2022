@@ -35,10 +35,10 @@ para transferência é definida nos parâmetros de mobilizaçáo do eleitor.')
 
 col1, col2, col3 = st.columns(3)
 cl = col1.slider('Ciro Gomes -> Lula', 0, 100, 50)
-tl = col3.slider('Simone Tebet -> Lula', 0, 100, 50)
+tl = col1.slider('Simone Tebet -> Lula', 0, 100, 50)
 sl = col1.slider('Soraya Thronicke-> Lula', 0, 100, 50)
 al = col3.slider('Felipe d\'Avila -> Lula', 0, 100, 50)
-ol = col1.slider('Outros -> Lula', 0, 100, 50)
+ol = col3.slider('Outros -> Lula', 0, 100, 50)
 bl = col3.slider('BNA -> Lula', 0, 100, 50)
 CiroLula = cl/100
 TebetLula = tl/100
