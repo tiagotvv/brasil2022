@@ -29,6 +29,10 @@ cp = cp/100
 cpbna = cpbna/100
 
 st.subheader('Migração de Votos')
+st.write('Escolha a proporção de votos válidos (de 0 a 100%) de cada candidato que irá para Lula. O restante \
+será alocado a Bolsonaro. BNA - Brancos, Nulos e Abstenções no 1º turno. A quantidade de votos válidos disponíveis \
+para transferência é definida nos parâmetros de mobilizaçáo do eleitor.')
+
 col1, col2, col3 = st.columns(3)
 cl = col1.slider('Ciro Gomes -> Lula', 0, 100, 50)
 tl = col3.slider('Simone Tebet -> Lula', 0, 100, 50)
@@ -68,11 +72,7 @@ st.write('Não votantes do 1ºturno que deram votos válidos no 2ºturno: '+ str
 
 
 with st.expander('Notas:'):
-    st.write('Diferentes cenários de transferências de votos. \
-    \n\
-    Escolha a proporção de votos válidos (de 0 a 100%) de cada candidato que irá para Lula. O restante será alocado a Bolsonaro.\
-    \n\
-    1) BNA - Brancos, Nulos e Abstenções no 1º turno.\n\
-    2) A quantidade de votos válidos disponíveis para transferência é definida nos parâmetros de mobilizaçáo do eleitor. \n\
-    3) Este simulador considera que praticamente todos os eleitores que votaram em Lula e Bolsonaro no 1º turno comparecerão no 2º turno (taxa de 98%) \
-    4) A taxa aproximada de comparecimento é calculada supondo que 4\% dos votos no 2º turno foram brancos/nulos')
+    st.write('\
+     Este simulador considera que praticamente todos os eleitores que votaram em Lula e Bolsonaro no 1º turno \
+     comparecerão no 2º turno (taxa de 98%). A taxa aproximada de comparecimento é calculada \
+     supondo que 4\% dos votos no 2º turno foram brancos/nulos')
